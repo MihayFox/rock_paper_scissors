@@ -42,7 +42,7 @@ function playRound(humanChoice, computerChoice) {
     document.getElementById('human-score').textContent = "Your score : " + humanScore;
 }
 
-while (humanScore < 5 && computerScore < 5) {
+    do {
     playRound();
 
     if (humanScore === 5) {
@@ -54,4 +54,4 @@ while (humanScore < 5 && computerScore < 5) {
         document.getElementById('result').textContent = "Computer won the game! Better luck next time.";
         break;
     }
-}
+} while (humanScore < 5 && computerScore < 5);
