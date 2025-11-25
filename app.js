@@ -47,9 +47,11 @@ while (humanScore < 5 && computerScore < 5) {
 
     if (humanScore === 5) {
         console.log("Congratulations! You won the game!");
+        document.getElementById('result').textContent = "Congratulations! You won the game!";
         break;
     } else if (computerScore === 5) {
         console.log("Computer won the game! Better luck next time.");
+        document.getElementById('result').textContent = "Computer won the game! Better luck next time.";
         break;
     }
 }
